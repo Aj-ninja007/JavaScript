@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cyan;
+        }
+        .jai{
+            text-align: center;
+            justify-content: center;
+            padding: 50px 50px 50px 50px;
+            margin: 30px 50px;
+            background-color: rgba(252, 14, 14, 0.116);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="jai">
+    <h1>Jai Shree Ram</h1>
+    <button id="stop">stop</button>
+</div>
+
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("prince")
+    // },2000)
+// setTimeout =is used to change the anything by the using of time 
+    // const syprince=function(){
+    //     console.log("prince");
+    // }
+
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="PLEASE SUPPORT ME";
+        }
+    const change=setTimeout(changeText,2000)
+
+    // const buttonchange = function(){
+    //     document.querySelector('button').innerHTML="jai shree ram"
+    // }
+    // setTimeout(buttonchange,3000)
+
+
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearTimeout(change)
+    // })
+
+    //clearTimeout()-it is used to stop the setTimeout()
+
+</script>
+</html>
