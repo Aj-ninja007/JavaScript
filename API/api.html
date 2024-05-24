@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi doloribus nisi laborum, molestias iure hic veniam quos ducimus possimus vel numquam reiciendis atque cum aspernatur veritatis odit ipsa! Magnam?</p>
+</body>
+<script>
+    //open is used to send the request
+    //open k under 2 reguest bhej sakte ek to kise pe request bhej ne or dusre kya request bhej ne h
+   
+     const requestURL='https://api.github.com/users/hiteshchoudhary'
+    const chx=new XMLHttpRequest();
+        chx.open('GET',requestURL);
+      //onreadystatechange is used to change the different value
+        chx.onreadystatechange=function(){
+            console.log(chx.readyState);
+            if (chx.readyState==4){
+                const data=JSON.parse(this.responseText)
+                document.querySelector('h1').innerHTML=data.avatar_url;
+            }
+        }
+       
+ 
+
+        chx.send()  //this is used to call the open
+
+</script>
+</html>
