@@ -1,0 +1,14 @@
+div{
+    background-color: aqua;
+    color: black;
+}
+body{
+    background-color: pink;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 1px solid black;
+    margin: 5px;
+    background-color: aquamarine;
+}
